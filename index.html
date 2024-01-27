@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trend | sign up</title>
+    <link rel="icon" href="IMAGES/fav-icon.svg">
+    <link rel="stylesheet" href="CSS/SIGNUP/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <div class="container nav__container">
+                <div class="nav__logo__box">
+                    <a class="nav__logo" href="index.html">
+                        <img src="IMAGES/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <ul id="nav__list" class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Contacts</a>
+                    </li>
+                    <li class="nav__item nav__item__login">
+                        <a href="login.html" class="login__link sign__link">Log in</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#signup" class="signup__link sign__link">Open an account</a>
+                    </li>
+                </ul>
+
+                <div class="nav__btns">
+                    <a href="login.html" class="mobile__login__link sign__link">Log in</a>
+                    <button id="hamburger__btn" class="hamburger__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="signup">
+            <div class="container signup__container">
+                <div class="signup__img">
+                    <img src="IMAGES/logo.svg" alt="logog">
+                </div>
+                <h2 class="signup__title">Welcome to ByTrend!</h2>
+                <div class="signup__text__box">
+                    <span class="sigup__text">Already have an account?</span>
+                    <a class="sigup__login__link" href="login.html">Log in</a>
+                </div>
+
+                <form>
+                    <!-- name -->
+                    <div class="signup__name__box">
+                        <!-- name -->
+                        <div class="name__box">
+                            <label for="name">First name <span>*</span></label>
+                            <input required id="name" type="text" placeholder="Your name" name="name">
+                        </div>
+                        <!-- surname -->
+                        <div>
+                            <label for="sur name">Last name <span>*</span></label>
+                            <input required id="sur name" type="text" placeholder="Your surname" name="sur name">
+                        </div>
+                    </div>
+                    <!-- date -->
+                    <div>
+                        <label for="date">Birth date <span>*</span></label>
+                        <input required id="date" type="date" placeholder="06.12.1992">
+                    </div>
+                    <!-- gender -->
+                    <div class="gender">
+                        <p class="gender__text">Gender <span>*</span></p>
+                        <div class="gender__box">
+                            <div class="gender__wrapper">
+                                <!-- female -->
+                                <input required class="gender__input" id="female" type="radio" name="gender"
+                                    placeholder="Female">
+                                <label for="female">Female</label>
+                            </div>
+                            <div class="gender__wrapper">
+                                <!-- male -->
+                                <input required class="gender__input" id="male" type="radio" name="gender"
+                                    placeholder="Male">
+                                <label for="male">Male</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- skype -->
+                    <div>
+                        <label for="skype">Female</label>
+                        <input id="skype" type="text" name="skype" placeholder="Your login Skype">
+                    </div>
+                    <!-- promo -->
+                    <div>
+                        <label for="promo">Promo</label>
+                        <input id="promo" type="text" name="promo" placeholder="Promo">
+                    </div>
+                    <!-- submit -->
+                    <div>
+                        <a href="signupcontinued.html" class="continue__link" type="submit">Continue
+                            <img class="continue__btn__img" src="IMAGES/arrow-right.svg" alt="arrow-right">
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <p class="main__text">©2020 All Rights Reserved. Lorem Technologies, Inc.</p>
+    </main>
+
+
+
+
+    <script src="./JS/app.js"></script>
+</body>
+
+</html>

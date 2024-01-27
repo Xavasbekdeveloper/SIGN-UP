@@ -1,0 +1,139 @@
+#navbar {
+    padding: 8px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.navbar-shrink {
+    box-shadow: 2px 0 10px gray;
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav__link {
+    position: relative;
+    padding: 2px 0;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.nav__link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #01BAB3;
+    top: 0;
+    right: 0;
+    transition: 0.3s;
+}
+
+.nav__link::after {
+    content:  "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #01BAB3;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.nav__link:hover::before, 
+.nav__link:hover::after, 
+.nav__link:hover  {
+    width: 100%;
+    color: #01BAB3;
+}
+
+.sign__link {
+    padding: 4px 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 0.3s ease-in-out;
+}
+
+.sign__link:hover {
+    border-color: #01BAB3;
+    background-color: #01BAB3;
+    color: #fff;
+}
+
+.nav__btns {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    display: none;
+}
+
+.hamburger__btn {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.hamburger__btn span {
+    border-radius: 5px;
+    width: 20px;
+    height: 3px;
+    background-color: #D9D9D9;
+}
+
+@media (max-width: 800px) {
+    .nav__item__login {
+        display: none;
+    }
+
+    .nav__list {
+        padding-top: 60px;
+        position: fixed;
+        top: 0;
+        left: -40%;
+        width: 40%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: start;
+        background-color: #fff;
+        box-shadow: 0 0 5px gray;
+        transition: 0.5s;
+    }
+
+    .nav__btns {
+        display: flex;
+    }
+}
+
+.show-nav-list {
+    left: 0;
+}

@@ -1,0 +1,186 @@
+main {
+    background-color: #FFF;
+}
+
+#signup {
+    padding-top: 80px;
+    padding-bottom: 64px;
+}
+
+.signup__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+.signup__img {
+    margin-bottom: 24px;
+}
+
+.signup__title {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.85);
+    font-family: "Segoe UI";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.signup__text__box {
+    margin-bottom: 56px;
+    text-align: center;
+}
+
+.signup__text {
+    color: #444150;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+.sigup__login__link {
+    border-bottom: 2px solid #01BAB3;
+    color: #01BAB3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 162.5% */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+label {
+    color: #444150;
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+}
+
+label span, .gender__text span {
+    color: #01BAB3;
+}
+
+input {
+    width: 100%;
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #D9D9D9;
+    background-color: #FBFBFB;
+}
+
+.number {
+    display: flex;  
+}
+
+.number__select {
+    border-color: #D9D9D9;
+    border-radius: 6px 0 0 6px;
+    background-color: #FBFBFB;
+}
+
+.select__number {
+    gap: 0;
+    margin: 0;
+}
+
+.number__input {
+    border-radius: 0 6px 6px 0;
+}
+
+.country {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.country__select {
+    border-color: #D9D9D9;
+    border-radius: 6px;
+    background-color: #FBFBFB;
+    width: 100%;
+    padding-left: 16px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+
+
+.password__box {
+    margin-bottom: 24px;
+}
+
+.password__form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#toggle-password {
+    position: absolute;
+    right: 20px;
+}
+
+.continue__btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 12px 0;
+    border-radius: 4px;
+    border: 1px solid #01BAB3;
+    background-color: #01BAB3;
+    color: var(--ffffff, #FFF);
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.4s ease-in-out;
+}
+
+.continue__btn:hover{
+   background-color: #00fff7;
+}
+
+
+.register__text {
+    color: #778699;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+}
+
+.register__text a {
+    color: #01BAB3;
+}
+
+@media (max-width: 421px) {
+    .country {
+        flex-direction: column;
+    }
+
+    .country__select {
+        width: 100%;
+    }
+
+}
